@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description", content="All my plugins in a only place.">
+    <title>Haziel Plugins</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav>
+            <ul>
+                <li><img src="../img/user.png" alt="" style="border-radius: 100%; width: 40px"></li>
+                <li><strong><a href="/me.html" class="contrast">Haziel Plugins</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>
+                    <details role="list" dir="rtl">
+                        <summary aria-haspopup="listbox" role="link">Content</summary>
+                        <ul role="listbox">
+                            <li><a href="/plugins/catalogue.html">Plugins</a></li>
+                            <li><a href="/#about">About</a></li>
+                            <li><a href="/#contact">Contact</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="plugin">
+            <center>
+                <img src="https://userr00t.com/bp/assetbrowser/snapshots/Axe.png" alt="Lumberjack preview" style="border-radius: 100%; width: 400px;">
+                <h1 style="margin-top: 20px;">Lumberjack Plugin</h1>
+                <p>Lumberjack Plugin is a plugin for broke protocol that allows you to add the job of lumberjack, without processors just approach the tree with an ax and press "Chop"</p>
+                <a href="" role="button">Download Here</a>
+            </center>
+            <div class="config" style="margin-top: 60px;">
+                <h3>Configuration:</h3>
+                <p><strong>Map actions:</strong> create a lumberjack zone and add <code>TreeWoodcutter</code> in the area, thats trees allow the player to chop.<br><br><strong>Config file:</strong> The configuration file is located at <code>/Plugins/Lumberjack Plugin/<u>Lumberjack.json</u></code>. You can change the following params:</p>
+                <table role="grid">
+                    <h5 style="text-align: center;">Basic options</h5>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <th><code>lumberjack_tool</code></th>
+                        <td>The item required to chop.</td>
+                    </tr>
+                    <tr>
+                        <th><code>reward</code></th>
+                        <td>the object that is given at the end of felling</td>
+                    </tr>
+                    <tr>
+                        <th><code>reward_item_count</code></th>
+                        <td>the count of reward given</td>
+                    </tr>
+                    <tr>
+                        <th><code>chop_time</code></th>
+                        <td>The time it takes to cut down the tree</td>
+                    </tr>
+                    <tr>
+                        <th><code>tree_respawn_delay</code></th>
+                        <td>The time it takes to regenerate the tree</td>
+                    </tr>
+                </table>
+                <table role="grid">
+                    <h5 style="text-align: center;">Plugin messages</h5>
+                    <tr>
+                        <th>Message</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <th><code>need_axe</code></th>
+                        <td>The item required to chop.</td>
+                    </tr>
+                    <tr>
+                        <th><code>equip_axe</code></th>
+                        <td>the object that is given at the end of felling</td>
+                    </tr>
+                    <tr>
+                        <th><code>reward_message</code></th>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="asset">
+            <center>
+                <img src="https://userr00t.com/bp/assetbrowser/snapshots/TreePine.png" alt="Lumberjack preview" style="border-radius: 100%; width: 400px;">
+                <h1 style="margin-top: 20px;">Lumberjack Asset</h1>
+                <p>Lumberjack Asset adds objects, entities, and tools that help the "Lumberjack Plugin" work properly</p>
+                <a href="" role="button">Download Here</a>
+            </center>
+            <div class="content" style="margin-top: 60px;">
+                <h3>Content:</h3>
+                <p></p>
+                <table role="grid">
+                    <h5 style="text-align: center;">Items an Entities</h5>
+                    <tr>
+                        <th>Object</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <th><code>LogWoodcutter</code></th>
+                        <td><code>Item</code></td>
+                        <td>Wood log (Can be used as rewad).</td>
+                    </tr>
+                    <tr>
+                        <th><code>PlankWoodcutter</code></th>
+                        <td><code>Item</code></td>
+                        <td>Wood plank (Can be used as reward)</td>
+                    </tr>
+                    <tr>
+                        <th><code>TreeWoodcutter</code></th>
+                        <td><code>Entity</code></td> 
+                        <td>Tree entity, this tree allow you to chop.</td>
+                    </tr>
+                    <tr>
+                        <th><code>FallingTree</code></th>
+                        <td><code>Entity/Sound Player</code></td>
+                        <td>Falling tree sfx</td>
+                    </tr>
+                    <tr>
+                        <th><code>WoodcutterSound</code></th>
+                        <td><code>Entity/Sound Player</code></td>
+                        <td>Chop action sfx</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
